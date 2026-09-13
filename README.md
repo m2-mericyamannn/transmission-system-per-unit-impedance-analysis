@@ -4,11 +4,9 @@ Excel-based per-unit impedance calculation for a four-bus transmission system co
 
 ![Four-bus transmission system](assets/single-line-diagram.jpg)
 
-## Scope
+## Project objective
 
-The workbook addresses Question 1 of the 2025 Energy Transmission Systems assignment. It converts each component to a common system base and calculates base current, base impedance, per-unit reactance, load impedance, and load-current components.
-
-Question 2 of the assignment requires separate conductor-geometry calculations and a single PDF submission. Those calculations are outside this workbook and are not included in this repository.
+This project provides a formula-driven solution for calculating the per-unit impedances of every component in the illustrated transmission system on a common MVA and kV base. It also calculates base current, base impedance, load impedance, and the active and reactive components of the load current.
 
 ## Selected system data
 
@@ -20,7 +18,7 @@ Question 2 of the assignment requires separate conductor-geometry calculations a
 | Transformer 2 | 140 MVA | 154/35 kV | 0.15 pu |
 | Load | 70 MVA, 0.8 lagging power factor | 35 kV | - |
 
-The selected ratings satisfy the assignment constraint `S_G <= S_TR1`, `S_TR1 >= S_TR2`, and `S_TR2 > S_load`. Generator and transformer reactances are within 0.10-0.50 pu, and the line reactance is within the required 40-160 ohm range.
+The project uses the design constraints `S_G <= S_TR1`, `S_TR1 >= S_TR2`, and `S_TR2 > S_load`. Generator and transformer reactances are selected from the 0.10-0.50 pu range, while the transmission-line reactance is selected from the 40-160 ohm range.
 
 ## Common base
 
@@ -73,4 +71,4 @@ The worksheet label `EMPEDANS(MVA)` is a display-label typo retained from the or
 | --- | --- |
 | `transmission-system-per-unit-impedance-analysis.xlsx` | Formula-driven per-unit calculation workbook |
 | `assets/single-line-diagram.jpg` | Four-bus system topology used in the workbook |
-| `README.md` | Assignment scope, input data, equations, and verified results |
+| `README.md` | Project objective, input data, equations, and verified results |
